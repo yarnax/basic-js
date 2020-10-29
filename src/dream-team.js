@@ -1,7 +1,7 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function createDreamTeam(members) {
-  console.log(members);
+  //console.log(members);
   if (!(Array.isArray(members))) {return false}
   let teamName = [];
   members.forEach(element => {
@@ -15,6 +15,6 @@ module.exports = function createDreamTeam(members) {
     
   });
   teamName = teamName.sort().join("").toUpperCase();
-  console.log("name of the team -- " + teamName)
+  //console.log("name of the team -- " + teamName)
   return teamName;
 };
