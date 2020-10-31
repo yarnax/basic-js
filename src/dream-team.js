@@ -14,7 +14,15 @@ module.exports = function createDreamTeam(members) {
     //console.log("array -- " + teamName)
     
   });
-  teamName = teamName.sort().join("").toUpperCase();
-  //console.log("name of the team -- " + teamName)
-  return teamName;
+  let upperName = []
+  teamName.forEach(element => {
+    upperName.push(element.toUpperCase());
+    //console.log(element)
+  });
+
+  upperName = upperName.sort()
+  //console.log("sorted ---------- " + upperName);
+  upperName = upperName.join("");
+  //console.log("name of the team -- " + upperName)
+  return upperName;
 };

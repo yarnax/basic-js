@@ -1,6 +1,7 @@
 const CustomError = require("../extensions/custom-error");
 
 const chainMaker = {
+  chainStr: "",
   getLength() {
     throw new CustomError('Not implemented');
     // remove line with error and write your code here
@@ -18,8 +19,7 @@ const chainMaker = {
     // remove line with error and write your code here
   },
   finishChain() {
-    throw new CustomError('Not implemented');
-    // remove line with error and write your code here
+    return chainStr;
   }
 };
 
