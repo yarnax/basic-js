@@ -17,9 +17,9 @@ module.exports = function repeater(str, options) {
   if (additionRepeatTimes === undefined || additionRepeatTimes === null) {additionRepeatTimes = 0}
   
 
-  console.log("start data");
-  console.log(str);
-  console.log(options);
+  //console.log("start data");
+  //console.log(str);
+  //console.log(options);
 
   for (let repT = 0; repT < repeatTimes; repT++) {
     answerRepeat += str;
@@ -36,7 +36,7 @@ module.exports = function repeater(str, options) {
     
     
   }
-  console.log(answerRepeat);
+  //console.log(answerRepeat);
   return answerRepeat;
 
 };
